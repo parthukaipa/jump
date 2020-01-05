@@ -4,7 +4,7 @@ node('jump'){
     }
     stage("copy"){
         //sh"ssh $user@$serverip sudo chown -R suresh:root /opt/"
-        sh "scp  apache-tomcat-8.5.50.tar.gz $user@$serverip:/opt/test"
+        sh "scp /root/workspace/ $user@$serverip:/opt/test"
     }
     
 }
