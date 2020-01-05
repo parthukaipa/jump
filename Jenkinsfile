@@ -4,7 +4,7 @@ node('jump'){
     }
     stage("copy"){
         //sh"ssh $user@$serverip sudo chown -R suresh:root /opt/"
-        sh "scp /root/workspace/ $user@$serverip:/opt/test"
+        sh "scp -R /root/workspace/tomcat $user@$serverip:/opt/test"
     }
     
 }
